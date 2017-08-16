@@ -1,0 +1,22 @@
+{
+    "name": "scapital-0508/captcha",
+    "require": {
+        "gregwar/captcha": "^1.1",
+        "workerman/mysql": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "liudaye",
+            "email": "615742973@qq.com"
+        }
+    ],
+    "autoload":{
+        "files":[
+          "core/function.php"
+        ],
+        "psr-4":{
+            "core\\":"core",
+            "web\\":"web"
+        }
+    }
+}
