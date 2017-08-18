@@ -9,7 +9,7 @@ namespace web\controller;
 
 use core\View;
 use Gregwar\Captcha\CaptchaBuilder;
-use Workerman\MySQL\Connection;
+use web\controller\dbcon;
 
 class Index{
     protected $view;
@@ -36,7 +36,7 @@ class Index{
     }
 
     public function mysql(){
-        $db = new Connection('127.0.0.1', '3306', 'root', '123', 'blog');
+        $db = dbcon::getInstance();
         $result = $db->query("SELECT * FROM `pages`");
         var_dump($result);
     }
