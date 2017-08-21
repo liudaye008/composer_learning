@@ -2,7 +2,9 @@
     "name": "scapital-0508/captcha",
     "require": {
         "gregwar/captcha": "^1.1",
-        "workerman/mysql": "^1.0"
+        "workerman/mysql": "^1.0",
+        "moon/artisan": "^1.8",
+        "illuminate/view": "^5.4"
     },
     "authors": [
         {

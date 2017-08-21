@@ -15,8 +15,8 @@ class Bootstrap{
     public static function parseUrl(){
         if (isset($_GET['s'])){
             $info = explode('/',$_GET['s']);
-            $class = '\web\controller\\'.ucfirst($info[0]);
-            $action = $info[1];
+            $class = '\web\controller\\'.ucfirst($info[0]).'\\'.ucfirst($info[1]);
+            $action = $info[2];
         }else{
             $class = "\web\controller\Index";
             $action = "show";
